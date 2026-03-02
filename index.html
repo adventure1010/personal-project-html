@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIMOH RASAQ OLADIMEJI Portfolio</title>
+</head>
+<body>
+
+  <!-- ===== SIDEBAR (semantic ASIDE) ===== -->
+  <aside>
+    <h1>RASAQ OLADIMEJI</h1>
+
+    <nav>
+      <ul >
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#about"> About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p><em> based in Lagos, Nigeria</em></p>
+  </aside>
+
+  <!-- ===== MAIN PAGE CONTENT (sections with ids) ===== -->
+  <main>
+
+    <!-- ############  HOME  ############ -->
+    <section id="home">
+      <h1> Welcome to my profile</h1>
+    
+      <div>
+        <img src="./Image.jpeg" alt="Portfolio picture"
+        width="100"
+        height="180">
+        <p>
+          Hi, I'm <strong>Rasaq Oladimeji</strong> a problem solver and aspiring developer.
+          I love building things that live on the internet, and this <em> <b>HTML only profile</b></em> shows my
+          dedication to structured.<br>
+        </p>
+        
+      </div>
+      <!-- extra inline link (example) -->
+      <p>You can also <a href="#contact">jump to contact form</a> directly.</p>
+    </section>
+
+    <!-- ############  ABOUT  ############ -->
+    <section id="about">
+      <h2>About me</h2>
+      <!-- short biography -->
+      <p>
+        I was born and raised in <strong>Lagos, Nigeria</strong>,
+        Over the past few years I've worked in <em> community outreach</em> and tech support,
+        which sparked my interest in web development. I'm known for being curious, collaborative,
+        and a bit of a coffee type.
+      </p>
+      <p>
+        I believe that <b>clear, semantic HTML</b> is the foundation of an accessible web.
+        In my spare time I enjoy hiking, reading, and trying out new food.
+      </p>
+    
+    </section>
+
+    <!-- ############  EDUCATION  ############ -->
+
+    <section id="education" >
+
+      <h2>Academic history</h2>
+
+      <!-- properly structured HTML table (headers, rows, data cells) -->
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Qualification</th>
+            <th>Remark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ESTAM University</strong></td>
+            <td>2017-2020</td>
+            <td>Bsc in Computer Science</td>
+            <td>2nd Class Upper</td>
+          </tr>
+          <tr>
+            <td><strong>Federal Poly Offa</strong></td>
+            <td>2012-</td>
+            <td>Dropped out</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td><strong>High School Diploma</strong></td>
+            <td>2002-2008</td>
+            <td>WAEC</td>
+            <td>Paased</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ############  HOBBIES  ############ -->
+    <section id="hobbies">
+
+      <h2>Hobbies & interests</h2>
+      
+      <ul>
+        <li><strong>Hiking</strong>: I’ve explored over 6 state parks in Nigeria.</li><br>
+
+        <li><strong>Fishing</strong>: I love to fish on my free time </li>  <br>
+
+        <li><strong>Exercise</strong>: Working out is one of my favorite hobby.</li><br>
+
+        <li><strong>Traveling</strong>: Traveling adventure open me to more opportunities.</li><br>
+
+        <li><strong>Learning</strong>: I love to learn more eevryday.</li>
+      </ul>
+    </section>
+
+    <!-- ############  CONTACT  ############ -->
+    <section id="contact" >
+      <h2>Contact me</h2>
+
+      <form>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Rasaq dimeji" required> <br>
+        <!-- email field (different input type) -->
+        
+          <label for="email">Email address:</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required><br> <br>
+        
+
+        <!-- (radio buttons, inline) i include to refresh my memories how to group a part of section of -->
+
+        <fieldset>
+          <legend>Reason for contact:</legend>
+            <input type="radio" id="general" name="reason" value="general" checked>
+            <label for="general">General</label>
+          
+            <input type="radio" id="collab" name="reason" value="collab">
+            <label for="collab">Project</label>
+        </fieldset>
+
+        <!-- dropdown / select (another input type) to help improve my html knowledge-->
+        
+          <label for="howtofind">How did you hear about me?</label><br>
+          <select id="howtofind" name="howtofind">
+
+            <option value="linkedin">LinkedIn</option>
+            <option value="github">GitHub</option>
+            <option value="friend">Friend/colleague</option>
+            <option value="other">Other</option>
+          </select> <br><br>
+        
+
+        <!-- message box (textarea) -->
+       
+          <label for="message">Feedback/Comment:</label><br>
+          <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message here...">
+
+          </textarea>
+       
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear</button>
+        
+      </form>
+    </section>
+
+    <!-- extra footer (semantic) -->
+    <footer>
+      <p>© 2025 Alex Rivera — built with <b>semantic HTML only</b> (no CSS used). All sections are linked via sidebar.</p>
+      <p> <a href="#home">back to top</a> • <a href="#about">about</a> • <a href="#education">education</a> • <a href="#hobbies">hobbies</a> • <a href="#contact">contact</a></p>
+    </footer>
+  </main>
+</body>
+</html>
